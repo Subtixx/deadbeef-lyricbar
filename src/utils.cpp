@@ -193,7 +193,7 @@ int mkpath(const string &name, mode_t mode) {
 	return 0;
 }
 
-int remove_from_cache_action(DB_plugin_action_t *, int ctx) {
+int remove_from_cache_action(DB_plugin_action_t *, ddb_action_context_t ctx) {
 	if (ctx == DDB_ACTION_CTX_SELECTION) {
 		pl_lock_guard guard;
 
