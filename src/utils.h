@@ -37,7 +37,7 @@ int mkpath(const std::string &name, mode_t mode);
 
 extern "C" {
 #endif // __cplusplus
-int remove_from_cache_action(DB_plugin_action_t *, int ctx);
+int remove_from_cache_action(DB_plugin_action_t *, ddb_action_context_t ctx);
 bool is_cached(const char *artist, const char *title);
 void ensure_lyrics_path_exists();
 
